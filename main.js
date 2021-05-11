@@ -31,3 +31,46 @@ function new_image(getimage) {
         canvas.add(blockImg);
     });
 }
+window.addEventListener("keydown",joir);
+
+function joir(e) {
+    var tran = e.keyCode;
+    console.log(tran);
+    if(tran == "70"){
+        new_image("ironman_face.png");
+        console.log("f");
+    }
+    if(tran == "66"){
+        new_image("spiderman_body.png");
+        console.log("b");
+    }
+    if(tran == "76"){
+        new_image("hulk_legs.png");
+        console.log("l");
+    }
+    if(tran == "82"){
+        new_image("thor_right_hand.png");
+        console.log("r");
+    }
+    if(tran == "72"){
+        new_image("captain_america_left_hand.png");
+        console.log("h");
+    }
+    if(tran == "37"){
+        left();
+        console.log("left");
+    }
+    if(tran == "38"){
+        up();
+        console.log("up");
+    }
+    if(tran == "39"){
+        right();
+        console.log("right");
+    }
+    if(tran == "40"){
+        down();
+        console.log("down");
+    }
+
+}
