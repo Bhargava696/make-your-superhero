@@ -1,6 +1,6 @@
 canvas = new fabric.Canvas("canvas");
-var height = 30;
-var width = 30;
+var height = 130;
+var width = 130;
 var x = 10;
 var y = 10;
 var playerImg = "";
@@ -73,4 +73,39 @@ function joir(e) {
         console.log("down");
     }
 
+}
+function up(){
+    if(y >= 0){
+        y = y - height;
+        console.log("up");
+        canvas.remove(playerImg);
+        player_update();
+    }
+}
+
+function right(){
+    if(x <= 750){
+        x = x + width;
+        console.log("right");
+        canvas.remove(playerImg);
+        player_update();
+    }
+}
+
+function left(){
+    if(x >= 0){
+        x = x - width;
+        console.log("left");
+        canvas.remove(playerImg);
+        player_update();
+    }
+}
+
+function down(){
+    if(y <= 550){
+        y = y + height;
+        console.log("down");
+        canvas.remove(playerImg);
+        player_update();
+    }
 }
